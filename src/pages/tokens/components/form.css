@@ -1,0 +1,67 @@
+.form-group {
+  margin-bottom: 1em;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.form-col {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 1em;
+}
+.form-col:last-child {
+  margin-right: 0;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+input[type='text'],
+input[type='number'] {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.checkbox-group label {
+  margin-right: 0.5em;
+}
+
+.send-button {
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* Effet de survol */
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Effet de clic */
+button:active {
+  background-color: #004494;
+  transform: scale(0.95);
+}
+
+/* Désactiver le bouton si nécessaire */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
